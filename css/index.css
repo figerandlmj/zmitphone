@@ -1,0 +1,1668 @@
+@charset "utf-8";
+* {
+  margin: 0px; 
+  padding: 0px;
+  font-family: "微软雅黑";
+}
+a{ 
+	text-decoration: none;
+	cursor: pointer;
+}
+li{ 
+	list-style-type: none; 
+	font-size: 12px; 
+	color: #ffffff;
+}
+img{
+	border: none;
+}
+.fl{ 
+	float: left;
+}
+.fr{ 
+	float: right;
+}
+.re{
+	position: relative;
+}
+
+.allBox{
+	width: 720px;
+	min-height: 1280px;
+	overflow: hidden;
+	position: relative;
+}
+
+.leftNav{
+	width: 402px;
+	height: 1280px;
+	position: absolute;
+	left: -403px;
+	top: 0px;
+	background: #f9f9f9;
+	border-right: 1px solid #cdcccc;
+	z-index:-999;
+}
+
+.empty{
+	width: 100%;
+	height: 65px;
+}
+.loadingseo,.loadingwechat,.loadingweb,.loadingsoft{
+	text-align: center;
+	color:#999999;
+	font-size: 24px;
+}
+.leftNavList{
+	display: block;
+	width: 100%;
+	height: 85px;
+	text-align: center;
+	line-height: 85px;
+	color: #1b1b1b;
+	font-size: 34px;
+	position: relative;
+}
+
+.leftNavLine{
+	width: 100%;
+	height: 1px;
+	background: url(../images/allicon.png) top center;
+	background-position:-17px -57px;
+
+}
+.navIcon{
+	background: url(../images/allicon.png);
+	position: absolute;
+}
+
+.leftNavIcon1{
+	width:26px;
+	height:33px;
+	background-position:-111px -10px;
+	left: 75px;
+	top: 25px;
+}
+.leftNavIcon2{
+	width:22px;
+	height:32px;
+	background-position:-148px -11px;
+	left: 77px;
+	top: 31px;
+}
+
+.leftNavIcon3{
+	width:36px;
+	height:31px;
+	background-position:-182px -12px;
+	left: 70px;
+	top: 30px;
+}
+
+.leftNavIcon4{
+	width:38px;
+	height:28px;
+	background-position:-228px -13px;
+	left: 70px;
+	top: 30px;
+}
+
+.leftNavIcon5{
+	width:29px;
+	height:29px;
+	background-position:-276px -13px;
+	left: 73px;
+	top: 31px;
+}
+.leftNavIcon6{
+	width:32px;
+	height:33px;
+	background-position:-313px -8px;
+	left: 72px;
+	top: 28px;			
+}
+.leftNavIcon7{
+	width:32px;
+	height:33px;
+	background-position:-357px -6px;
+	left: 73px;
+	top: 29px;
+}
+.leftNavIcon8{
+	width:32px;
+	height:33px;
+	background-position:-398px -5px;
+	left: 73px;
+	top: 29px;
+}
+.leftNavIcon9{
+	width:24px;
+	height:33px;
+	background-position:-442px -6px;
+	left: 76px;
+	top: 28px;
+}
+
+.leftNavIcon10{
+	width:31px;
+	height:33px;
+	background-position:-482px -5px;
+	left: 73px;
+	top: 29px;
+}
+
+.main{
+	width: 720px;
+	min-height: 1280px;
+	float: left;
+	background: #FFF;
+	position: relative;
+	z-index: 1;
+}
+
+.header{
+	width: 100%;
+	height: 97px;
+	position: relative;
+}
+
+.navBtn{
+	display: block;
+	width:38px;
+	height:35px;
+	background: url(../images/allicon.png);
+	background-position:-10px -10px;
+	float: left;
+	margin-left: 40px;
+	margin-top: 30px;
+}
+
+.logo{
+	display: block;
+	float: left;
+	margin-left: 180px;
+	margin-top: 23px;
+}
+
+.phoneBtn{
+	display: block;
+	width:36px;
+	height:41px;
+	background: url(../images/allicon.png);
+	background-position:-64px -7px;
+	float: right;
+	margin-right: 42px;
+	margin-top: 31px;
+
+}
+
+.mainCon{
+	width: 100%;
+	min-height: 1280px;
+	overflow: hidden;
+}
+
+/*手机banner 滚动*/
+.addWrap{ 
+	position:relative; 
+	width:100%;
+	height: 363px;
+	background:#fff;
+	margin:0; 
+	padding:0;
+}
+
+.addWrap .swipe{
+	overflow: hidden;
+	visibility: hidden;
+	position:relative;
+}
+.addWrap .swipe-wrap{
+	overflow:hidden;
+	position:relative;
+}
+.addWrap .swipe-wrap > div {
+	float: left;
+	width: 100%;
+	position:relative;
+}
+#position{ 
+	position:absolute; 
+	bottom:0; 
+	right:0; 
+	padding-right:8px; 
+	margin:0;  
+	width:100%; 
+	text-align:right;
+}
+#position li{
+	width:10px;
+	height:10px;
+	margin:0 2px;
+	display:inline-block;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	background-color:#FFF; 
+	opacity: 0.4;
+}
+#position li.cur{
+	background-color:#fdf464;
+	opacity: 0.4;
+}
+.img-responsive { 
+	display: block; 
+	max-width:100%;
+	height: auto;
+}
+/*手机banner 滚动结束*/
+
+
+/*浮动导航*/
+.floatEmpty{
+	width: 100%;
+	height: 85px;	
+}
+
+.floatNav{
+	width: 720px;
+	height: 85px;
+	position: absolute;
+	left: 0px;
+	top: 460px;
+	border-top: 1px solid #cdcccc;
+	border-bottom: 1px solid #cdcccc;
+	background: #FFF;
+	z-index: 99;
+}
+
+.anchorBtn{
+	min-width: 64px;
+	height: 80px;
+	font-size: 32px;
+	float: left;
+	margin-left: 50px;
+	overflow: hidden;
+	line-height: 80px;
+	color: #626262;
+	text-align: center;
+}
+
+.anchorLeftNav{
+	margin-top: 25px !important;
+	display: none !important;
+}
+
+.anchorBtnSel{
+	color: #00a0e9;
+	font-size: 40px;
+	border-bottom: 5px solid #00a0e9;
+}
+
+.anchorEmpty{
+	display: block;
+	width:38px;
+	height:35px;
+	float: left;
+	margin-left: 40px;
+	margin-top: 25px;
+}
+
+.appBox{
+	width:672px;
+	min-height: 500px;
+	overflow: hidden;
+	margin: auto;
+	
+}
+.appBoxTop{
+	width: 100%;
+	min-height: 800px;
+	overflow: hidden;
+}
+
+.boxHead{
+	width: 100%;
+	height:56px; 
+	text-align: center;
+	float: left;
+	margin-top: 38px;
+	font-size: 32px;
+	color: #626262;
+	position: relative;
+	font-weight: bold;
+}
+.boxHead .line{
+	width: 48px;
+	height: 8px;
+	background: #00a0e9;
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	margin-left: -24px;
+}
+
+.appBoxTopListLeft{
+	float: left;
+	width: 100%;
+	min-height:125px; 
+	overflow: hidden;
+	margin-top: 25px;
+}
+
+.appBoxTopListLeft  .iconRound{
+	float: left;
+	width: 85px;
+	height: 85px;
+	border-radius: 85px;
+	margin-left: 16px;
+
+}
+.color72b97f{
+	background: #72b97f;
+}
+.appBoxTopListLeft .icon1{
+	width:30px;
+	height:35px;
+	background: url(../images/allicon.png);
+	background-position:-527px -5px;
+	margin: auto;
+	margin-top: 25px;
+}	
+.appBoxTopListLeft .wordShow{
+	float: left;
+	margin-left: 25px;
+}
+.appBoxTopListLeft .wordShow .title{
+	width: 520px;
+	font-size: 34px;
+	color: #313131;
+	font-weight: bold;
+	text-align: left;
+}
+.appBoxTopListLeft .wordShow .word{
+	width: 520px;
+	font-size: 34px;
+	color: #7d7d7d;
+	text-align: left;
+	margin-top: 10px;
+}
+
+
+
+
+.appBoxTopListRight{
+	float: left;
+	width: 100%;
+	min-height:125px; 
+	overflow: hidden;
+	margin-top: 25px;
+}
+
+.appBoxTopListRight  .iconRound{
+	float: right;
+	width: 85px;
+	height: 85px;
+	border-radius: 85px;
+	margin-right: 16px;
+
+}
+.colord5ae4f{
+	background: #d5ae4f;
+}
+.appBoxTopListRight .icon2{
+	width:25px;
+	height:28px;
+	background: url(../images/allicon.png);
+	background-position:-566px -9px;
+	margin: auto;
+	margin-top: 30px;
+}	
+.appBoxTopListRight .wordShow{
+	float: left;
+	margin-left: 25px;
+}
+.appBoxTopListRight .wordShow .title{
+	width: 520px;
+	font-size: 34px;
+	color: #313131;
+	font-weight: bold;
+	text-align: right;
+}
+.appBoxTopListRight .wordShow .word{
+	width: 520px;
+	font-size: 34px;
+	color: #7d7d7d;
+	text-align: right;
+	margin-top: 10px;
+}
+
+.colordc7878{
+	background: #dc7878;
+}
+.appBoxTopListLeft .icon3{
+	width:30px;
+	height:29px;
+	background: url(../images/allicon.png);
+	background-position:-599px -5px;
+	margin: auto;
+	margin-top: 30px;
+}
+
+.color6fb3c8{
+	background: #6fb3c8;
+}
+
+.appBoxTopListRight .icon4{
+	width:24px;
+	height:27px;
+	background: url(../images/allicon.png);
+	background-position:-641px -9px;
+	margin: auto;
+	margin-top: 32px;
+}
+
+.colore58549{
+	background: #e58549;
+}
+.appBoxTopListLeft .icon5{
+	width:30px;
+	height:30px;
+	background: url(../images/allicon.png);
+	background-position:-675px -5px;
+	margin: auto;
+	margin-top: 28px;
+}
+
+.colord27ac8{
+	background: #d27ac8;
+}
+.appBoxTopListRight .icon6{
+	width:24px;
+	height:26px;
+	background: url(../images/allicon.png);
+	background-position:-714px -7px;
+	margin: auto;
+	margin-top: 32px;
+}
+
+.color67abda{
+	background: #67abda;
+}
+.appBoxTopListLeft .icon7{
+	width:31px;
+	height:25px;
+	background: url(../images/allicon.png);
+	background-position:-749px -9px;
+	margin: auto;
+	margin-top: 32px;
+}
+
+.color6ac1b0{
+	background: #6ac1b0;
+}
+.appBoxTopListRight .icon8{
+	width:24px;
+	height:26px;
+	background: url(../images/allicon.png);
+	background-position:-530px -45px;
+	margin: auto;
+	margin-top: 32px;
+}
+.color7c94d2{
+	background: #7c94d2;
+}
+.appBoxTopListLeft .icon9{
+	width:31px;
+	height:29px;
+	background: url(../images/allicon.png);
+	background-position:-566px -47px;
+	margin: auto;
+	margin-top: 30px;
+}
+
+.appBoxDown{
+	width: 100%;
+	min-height: 800px;
+	overflow: hidden;	
+}
+.appBoxDownList{
+	float: left;
+	width: 670px;
+	min-height: 180px;
+	overflow: hidden;
+	border: 1px solid #cdcccc;
+	margin-top: 10px;
+}
+
+.appBoxDownList .wordHead{
+	width: 100%;
+	height: 37px;
+	margin-top: 20px;
+}
+
+.appBoxDownList .wordHead .icon1{
+	float: left;
+	width:37px;
+	height:38px;
+	background: url(../images/allicon.png);
+	background-position:0 -65px;
+	margin-left: 15px;
+}
+
+.appBoxDownList .wordHead span{
+	float: left;
+	font-size: 32px;
+	color: #626262;
+	font-weight: bold;
+	margin-left: 12px;
+	line-height: 32px;
+}
+.appBoxDownList .wordCon{
+	width: 635px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 30px;
+	color: #7d7d7d;
+}
+
+.appBoxDownList .wordHead .icon2{
+	float: left;
+	width:37px;
+	height:35px;
+	background: url(../images/allicon.png);
+	background-position:-46px -66px;
+	margin-left: 15px;
+}
+.appBoxDownList .wordHead .icon3{
+	float: left;
+	width:36px;
+	height:35px;
+	background: url(../images/allicon.png);
+	background-position:-91px -66px;
+	margin-left: 15px;
+}
+
+.appBoxDownList .wordHead .icon4{
+	float: left;
+	width:38px;
+	height:32px;
+	background: url(../images/allicon.png);
+	background-position:-136px -68px;
+	margin-left: 15px;
+}
+
+.appBoxDownList .wordHead .icon5{
+	float: left;
+	width:35px;
+	height:33px;
+	background: url(../images/allicon.png);
+	background-position:-184px -68px;
+	margin-left: 15px;
+}
+.appBoxDownList .wordHead .icon6{
+	float: left;
+	width:26px;
+	height:33px;
+	background: url(../images/allicon.png);
+	background-position:-226px -66px;
+	margin-left: 15px;
+}
+
+
+.moreBtn{
+	display: block;
+	width: 100%;
+	height: 80px;
+	border-top: 1px solid #cdcccc;
+	border-bottom: 1px solid #cdcccc;
+	font-size: 30px;
+	color: #00a0e9;
+	text-align: center;
+	line-height: 80px;
+	margin-top: 40px;
+	position: relative;
+}
+.moreBtn .icon{
+	display: block;
+	width:28px;
+	height:35px;
+	background: url(../images/allicon.png);
+	background-position:-271px -65px;
+	position: absolute;
+	right: 115px;
+	top: 23px;
+}
+
+
+.weChatBox{
+	width:672px;
+	min-height: 500px;
+	height: auto;
+	overflow: hidden;
+	margin: auto;
+}
+
+.weChatHead{
+	width: 100%;
+	min-height: 200px;
+	overflow: hidden;
+	float: left;
+}
+
+.weChatIcon{
+	width:150px;
+	height:150px;
+	background: url(../images/allicon.png);
+	background-position:0 -113px;
+	float: left;
+}
+
+.weChatHead p{
+	float: right;
+	width: 506px;
+	font-size: 30px;
+	color: #1b1b1b;
+	text-align: left;
+	line-height: 40px;
+}
+.weChatHead p b{
+	color: #5fbf1e;
+	font-size: 40px;
+	line-height: 32px;
+}
+
+.weChatInfo{
+	float: left;
+	width: 336px;
+	height: 75px;
+	margin-top: 40px;
+}
+.weChatInfo .top{
+	text-align: center;
+	font-size: 24px;
+	color: #959595;
+}
+
+.weChatInfo .down{
+	text-align: center;
+	font-size: 20px;
+	color: #989898;
+	line-height: 45px;
+}
+.weChatInfo .down b{
+	color: #333333;
+	font-size: 31px;
+	font-family: "Georgia";
+
+}
+.weChatRound{
+	width: 100%;
+	height: 700px;
+	float: left;
+	overflow: hidden;
+}
+
+.weChatRoundShow{
+	width: 750px;
+	float: left;
+	margin-left: -33px;
+}
+.weChatRoundList{
+	width: 140px;
+	height: 140px;
+	border: 1px solid #acacac;
+	border-radius: 140px;
+	float: left;
+	margin-left: 33px;
+	margin-top: 30px;
+}
+.weChatRoundList .icon1{
+	width:52px;
+	height:52px;
+	background: url(../images/allicon.png);
+	background-position:-154px -113px;
+	margin: auto;
+	margin-top: 31px;
+	margin-bottom: 10px;
+}
+.weChatRoundList p{
+	text-align: center;
+	font-size: 20px;
+	color: #505050;
+}
+.weChatRoundList .icon2{
+	width:55px;
+	height:55px;
+	background: url(../images/allicon.png);
+	background-position:-212px -109px;
+	margin: auto;
+	margin-top: 28px;
+	margin-bottom: 10px;
+}
+
+.weChatRoundList .icon3{
+	width:58px;
+	height:49px;
+	background: url(../images/allicon.png);
+	background-position:-272px -113px;
+	margin: auto;
+	margin-top: 34px;
+	margin-bottom: 10px;
+}
+
+.weChatRoundList .icon4{
+	width:58px;
+	height:49px;
+	background: url(../images/allicon.png);
+	background-position:-336px -113px;
+	margin: auto;
+	margin-top: 34px;
+	margin-bottom: 10px;
+}
+
+.weChatRoundList .icon5{
+	width:49px;
+	height:49px;
+	background: url(../images/allicon.png);
+	background-position:-405px -115px;
+	margin: auto;
+	margin-top: 34px;
+	margin-bottom: 10px;
+}
+
+.weChatRoundList .icon6{
+	width:54px;
+	height:50px;
+	background: url(../images/allicon.png);
+	background-position:-462px -114px;
+	margin: auto;
+	margin-top: 33px;
+	margin-bottom: 10px;
+}
+.weChatRoundList .icon7{
+	width:62px;
+	height:35px;
+	background: url(../images/allicon.png);
+	background-position:-523px -114px;
+	margin: auto;
+	margin-top: 43px;
+	margin-bottom: 10px;
+}
+.weChatRoundList .icon8{
+	width:50px;
+	height:48px;
+	background: url(../images/allicon.png);
+	background-position:-591px -114px;
+	margin: auto;
+	margin-top: 32px;
+	margin-bottom: 10px;
+}
+
+.weChatRoundList .icon9{
+	width:54px;
+	height:54px;
+	background: url(../images/allicon.png);
+	background-position:-652px -109px;
+	margin: auto;
+	margin-top: 24px;
+	margin-bottom: 10px;
+}
+
+.weChatRoundList .icon10{
+	width:55px;
+	height:56px;
+	background: url(../images/allicon.png);
+	background-position:-711px -107px;
+	margin: auto;
+	margin-top: 27px;
+	margin-bottom: 10px;
+}
+
+.weChatRoundList .icon11{
+	width:55px;
+	height:51px;
+	background: url(../images/allicon.png);
+	background-position:-154px -176px;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+.weChatRoundList .icon12{
+	width:64px;
+	height:51px;
+	background: url(../images/allicon.png);
+	background-position:-217px -176px;
+	margin: auto;
+	margin-top: 36px;
+	margin-bottom: 10px;
+}
+.weChatRoundList .icon13{
+	width:52px;
+	height:52px;
+	background: url(../images/allicon.png);
+	background-position:-287px -169px;
+	margin: auto;
+	margin-top: 23px;
+	margin-bottom: 10px;
+}
+
+.weChatRoundList .icon14{
+	width:45px;
+	height:44px;
+	background: url(../images/allicon.png);
+	background-position:-347px -177px;
+	margin: auto;
+	margin-top: 32px;
+	margin-bottom: 10px;
+}
+
+.weChatRoundList .icon15{
+	width:47px;
+	height:50px;
+	background: url(../images/allicon.png);
+	background-position:-405px -172px;
+	margin: auto;
+	margin-top: 31px;
+	margin-bottom: 10px;
+}
+
+.weChatRoundList .icon16{
+	width:65px;
+	height:17px;
+	background: url(../images/allicon.png);
+	background-position:-466px -186px;
+	margin: auto;
+	margin-top: 53px;
+	margin-bottom: 10px;
+}
+
+.advantageLeft,.advantageRight{
+	width: 100%;
+	min-height: 130px;
+	overflow: hidden;
+	margin-top: 57px;
+	float: left;
+}
+
+.advantageLeft .Num1{
+	width:52px;
+	height:113px;
+	background: url(../images/allicon.png);
+	background-position:-554px -165px;
+	float: left;
+	margin-left: 26px;
+}
+.advantageLeft .bigWord{
+	width: 535px;
+	float: left;
+	margin-left: 30px;
+	font-size: 28px;
+	font-weight: bold;
+	text-align: left;
+	color: #616161;
+}
+
+.advantageLeft .bigWord b{
+	color: #61c01e;
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.advantageLeft .smallWord{
+	margin-left: 30px;
+	width: 535px;
+	float: left;
+	margin-top: 10px;
+	font-size: 28px;
+	color: #7d7d7d;
+}
+
+
+
+.advantageRight .Num2{
+	width:80px;
+	height:113px;
+	background: url(../images/allicon.png);
+	background-position:-630px -165px;
+	float: right;
+	margin-right: 26px;
+}
+.advantageRight .bigWord{
+	width: 535px;
+	float: left;
+	margin-right: 25px;
+	font-size: 28px;
+	font-weight: bold;
+	text-align: right;
+	color: #616161;
+}
+
+.advantageRight .bigWord b{
+	color: #61c01e;
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.advantageRight .smallWord{
+	margin-right: 25px;
+	width: 535px;
+	float: left;
+	margin-top: 10px;
+	font-size: 28px;
+	color: #7d7d7d;
+	text-align: right;
+}
+
+.advantageLeft .Num3{
+	width:80px;
+	height:116px;
+	background: url(../images/allicon.png);
+	background-position:-718px -164px;
+	float: left;
+	margin-left: 26px;
+}
+
+
+.advantageRight .Num4{
+	width:85px;
+	height:112px;
+	background: url(../images/allicon.png);
+	background-position:-539px -283px;
+	float: right;
+	margin-right: 26px;
+}
+
+.advantageLeft .Num5{
+	width:79px;
+	height:112px;
+	background: url(../images/allicon.png);
+	background-position:-635px -286px;
+	float: left;
+	margin-left: 26px;
+}
+
+
+.advantageRight .Num6{
+	width:81px;
+	height:115px;
+	background: url(../images/allicon.png);
+	background-position:-719px -285px;
+	float: right;
+	margin-right: 26px;
+}
+
+
+.webBox{
+	width:672px;
+	min-height: 500px;
+	height: auto;
+	overflow: hidden;
+	margin: auto;
+}
+
+.webMustBox{
+	width: 100%;
+	overflow: hidden;
+	float: left;
+}
+.webMustBoxShow{
+	float: left;
+	margin-left: -12px;
+}
+
+.webMustList{
+	float: left;
+	margin-left: 12px;
+	margin-top: 30px;
+	width: 214px;
+	height: 148px;
+	border: 1px solid #e5e5e5;
+	background: #eeeeee;
+}
+
+.webMustListTop{
+	width: 100%;
+	height: 100px;
+	background: #6dd1da;
+	float: left;
+}
+.webMustListTop .icon1{
+	width:42px;
+	height:45px;
+	background: url(../images/allicon.png);
+	background-position:-409px -239px;
+	margin: auto;
+	margin-top: 27px;
+}
+
+.webMustListDown{
+	font-size: 28px;
+	color: #313131;
+	text-align: center;
+	line-height: 45px;
+}
+
+.webMustListTop .icon2{
+	width:43px;
+	height:45px;
+	background: url(../images/allicon.png);
+	background-position:-468px -238px;
+	margin: auto;
+	margin-top: 27px;
+}
+.webMustListTop .icon3{
+	width:44px;
+	height:45px;
+	background: url(../images/allicon.png);
+	background-position:-166px -239px;
+	margin: auto;
+	margin-top: 27px;
+}
+.webMustListTop .icon4{
+	width:44px;
+	height:45px;
+	background: url(../images/allicon.png);
+	background-position:-219px -239px;
+	margin: auto;
+	margin-top: 27px;
+}
+.webMustListTop .icon5{
+	width:51px;
+	height:42px;
+	background: url(../images/allicon.png);
+	background-position:-338px -239px;
+	margin: auto;
+	margin-top: 28px;
+}
+.webMustListTop .icon6{
+	width:51px;
+	height:44px;
+	background: url(../images/allicon.png);
+	background-position:-274px -239px;
+	margin: auto;
+	margin-top: 27px;
+}
+
+.hotWebLeft,.hotWebRight{
+	width: 100%;
+	min-height:205px; 
+	overflow: hidden;
+	float: left;
+	margin-top: 25px;
+}
+.hotWebLeft  .Icon1{
+	float: left;
+	width:91px;
+	height:111px;
+	background: url(../images/allicon.png);
+	background-position:0 -273px;
+	margin-left: 7px;
+}
+.hotWebLeft .bigWord{
+	width: 540px;
+	float: left;
+	margin-left: 20px;
+	font-size: 34px;
+	color: #313131;
+	text-align: left;
+	line-height: 32px;
+}
+.hotWebLeft .smallWord{
+	width: 540px;
+	float: left;
+	margin-left: 20px;
+	font-size: 30px;
+	color: #626262;
+	text-align: left;
+	margin-top: 20px;
+}
+
+.hotWebRight  .Icon2{
+	float: right;
+	width:90px;
+	height:90px;
+	background: url(../images/allicon.png);
+	background-position:0 -391px;
+	margin-right: 7px;
+}
+.hotWebRight .bigWord{
+	width: 540px;
+	float: left;
+	margin-right: 20px;
+	font-size: 34px;
+	color: #313131;
+	text-align: right;
+	line-height: 32px;
+}
+.hotWebRight .smallWord{
+	width: 540px;
+	float: left;
+	margin-right: 20px;
+	font-size: 30px;
+	color: #626262;
+	text-align: right;
+	margin-top: 20px;
+}
+
+.hotWebLeft  .Icon3{
+	float: left;
+	width:91px;
+	height:111px;
+	background: url(../images/allicon.png);
+	background-position:-98px -290px;
+	margin-left: 7px;
+}
+
+.hotWebRight  .Icon4{
+	float: right;
+	width:90px;
+	height:90px;
+	background: url(../images/allicon.png);
+	background-position:-196px -290px;
+	margin-right: 7px;
+}
+.hotWebLeft  .Icon5{
+	float: left;
+	width:91px;
+	height:111px;
+	background: url(../images/allicon.png);
+	background-position:-294px -289px;
+	margin-left: 7px;
+}
+
+.hotWebRight  .Icon6{
+	float: right;
+	width:90px;
+	height:90px;
+	background: url(../images/allicon.png);
+	background-position:-390px -289px;
+	margin-right: 7px;
+}
+
+.nobg{
+	background: none !important;
+}
+
+.featureicon1{
+	width:81px;
+	height:81px;
+	background: url(../images/allicon.png);
+	background-position:-98px -406px;
+	margin: auto;
+	margin-top: 18px;
+}
+.featureicon2{
+	width:81px;
+	height:81px;
+	background: url(../images/allicon.png);
+	background-position:-183px -406px;
+	margin: auto;
+	margin-top: 18px;
+}
+.featureicon3{
+	width:81px;
+	height:81px;
+	background: url(../images/allicon.png);
+	background-position:-266px -406px;
+	margin: auto;
+	margin-top: 18px;
+}
+.featureicon4{
+	width:81px;
+	height:81px;
+	background: url(../images/allicon.png);
+	background-position:-353px -406px;
+	margin: auto;
+	margin-top: 18px;
+}
+.featureicon5{
+	width:81px;
+	height:81px;
+	background: url(../images/allicon.png);
+	background-position:-438px -405px;
+	margin: auto;
+	margin-top: 18px;
+}
+.featureicon6{
+	width:81px;
+	height:81px;
+	background: url(../images/allicon.png);
+	background-position:-523px -406px;
+	margin: auto;
+	margin-top: 18px;
+}
+
+.softwareBox{
+	width:672px;
+	min-height: 500px;
+	height: auto;
+	overflow: hidden;
+	margin: auto;
+}
+
+.softwareInduct{
+	float: left;
+	width: 100%;
+	min-height: 260px;
+	overflow: hidden;
+	margin-top: 30px;
+}
+
+.softwareInduct .head{
+	color: #626262;
+	font-size: 34px;
+	text-align: center;
+	font-weight: bold;
+}
+.softwareInduct .con{
+	color: #626262;
+	font-size: 33px;
+	text-align: left;
+	margin-top: 30px;
+}
+
+.softwareInduct .img1{
+	width:477px;
+	height:208px;
+	background: url(../images/allicon.png);
+	background-position:0 -792px;
+	margin: auto;
+	margin-top: 35px;
+}
+.softwareInduct .img2{
+	width:477px;
+	height:208px;
+	background: url(../images/allicon.png);
+	background-position:0 -577px;
+	margin: auto;
+	margin-top: 35px;
+}
+
+.softwareAdvantage{
+	float: left;
+	width: 100%;
+	min-height: 200px;
+	overflow: hidden;
+	margin-top: 40px;
+}
+.softwareAdvantage .head{
+	width: 250px;
+	height: 36px;
+	margin: auto;
+	position: relative;
+	text-align: center;
+	line-height: 36px;
+	text-align: center;
+}
+.softwareAdvantage .head span{
+	color: #a0a0a0;
+	font-size: 34px;
+}
+.softwareAdvantage .head .leftIcon{
+	width:18px;
+	height:34px;
+	background: url(../images/allicon.png);
+	background-position:-614px -47px;
+	position: absolute;
+	left: 0px;
+	top: 50%;
+	margin-top: -17px;
+}
+.softwareAdvantage .head .rightIcon{
+	width:18px;
+	height:34px;
+	background: url(../images/allicon.png);
+	background-position:-641px -47px;
+	position: absolute;
+	right: 0px;
+	top: 50%;
+	margin-top: -17px;
+}
+.softwareAdvantageBox{
+	width: 100%;
+	height: 130px;
+	float: left;
+	margin-top: 35px;
+	
+}
+
+.softwareAdvantageList{
+	width: 110px;
+	height: 100%;
+	float: left;
+	margin-left: 68px;
+
+}
+.softwareAdvantageList .icon1{
+	width:88px;
+	height:88px;
+	background: url(../images/allicon.png);
+	background-position:-93px -488px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+.softwareAdvantageList p{
+	text-align: center;
+	color: #7d7d7d;
+	font-size: 26px;
+}
+
+.softwareAdvantageList .icon2{
+	width:88px;
+	height:88px;
+	background: url(../images/allicon.png);
+	background-position:-183px -488px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+.softwareAdvantageList .icon3{
+	width:88px;
+	height:88px;
+	background: url(../images/allicon.png);
+	background-position:-274px -488px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+.softwareAdvantageList .icon4{
+	width:88px;
+	height:88px;
+	background: url(../images/allicon.png);
+	background-position:-364px -488px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+.softwareAdvantageList .icon5{
+	width:88px;
+	height:88px;
+	background: url(../images/allicon.png);
+	background-position:-454px -486px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+.softwareAdvantageList .icon6{
+	width:88px;
+	height:88px;
+	background: url(../images/allicon.png);
+	background-position:-544px -486px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+
+.seoBox{
+	width:672px;
+	min-height: 500px;
+	height: auto;
+	overflow: hidden;
+	margin: auto;
+}
+
+.seoListLeft,.seoListRight{
+	float: left;
+	width: 672px;
+	min-height: 130px;
+	overflow: hidden;
+	margin-top: 30px;
+}
+
+.seoListLeft .icon1{
+	width:88px;
+	height:88px;
+	background: url(../images/allicon.png);
+	background-position:-623px -400px;
+	float: left;
+	margin-left: 40px;
+}
+.seoListLeft .head1{
+	width: 460px;
+	float: left;
+	margin-left: 25px;
+	color: #4ea15e;
+	font-size: 34px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 32px;
+}
+.seoListLeft .con{
+	width: 460px;
+	float: left;
+	margin-left: 25px;
+	color: #434343;
+	font-size: 28px;
+	text-align: left;
+	margin-top: 20px;
+}
+
+.seoListRight .icon2{
+	width:88px;
+	height:88px;
+	background: url(../images/allicon.png);
+	background-position:-712px -402px;
+	float: right;
+	margin-right: 40px;
+}
+.seoListRight .head2{
+	width: 460px;
+	float: right;
+	margin-right: 25px;
+	color: #d2a334;
+	font-size: 34px;
+	font-weight: bold;
+	text-align: right;
+	line-height: 32px;
+}
+.seoListRight .con{
+	width: 460px;
+	float: right;
+	margin-right: 25px;
+	color: #434343;
+	font-size: 28px;
+	text-align: right;
+	margin-top: 20px;
+}
+
+
+.seoListLeft .icon3{
+	width:88px;
+	height:88px;
+	background: url(../images/allicon.png);
+	background-position:-642px -490px;
+	float: left;
+	margin-left: 40px;
+}
+.seoListLeft .head3{
+	width: 460px;
+	float: left;
+	margin-left: 25px;
+	color: #5376d1;
+	font-size: 34px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 32px;
+}
+
+
+.seoListRight .icon4{
+	width:88px;
+	height:88px;
+	background: url(../images/allicon.png);
+	background-position:-478px -578px;
+	float: right;
+	margin-right: 40px;
+}
+.seoListRight .head4{
+	width: 460px;
+	float: right;
+	margin-right: 25px;
+	color: #d85050;
+	font-size: 34px;
+	font-weight: bold;
+	text-align: right;
+	line-height: 32px;
+}
+
+.seoListLeft .icon5{
+	width:88px;
+	height:88px;
+	background: url(../images/allicon.png);
+	background-position:-571px -578px;
+	float: left;
+	margin-left: 40px;
+}
+.seoListLeft .head5{
+	width: 460px;
+	float: left;
+	margin-left: 25px;
+	color: #329c95;
+	font-size: 34px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 32px;
+}
+
+.seoListRight .icon6{
+	width:88px;
+	height:88px;
+	background: url(../images/allicon.png);
+	background-position:-668px -578px;
+	float: right;
+	margin-right: 40px;
+}
+.seoListRight .head6{
+	width: 460px;
+	float: right;
+	margin-right: 25px;
+	color: #cb4bbe;
+	font-size: 34px;
+	font-weight: bold;
+	text-align: right;
+	line-height: 32px;
+}
+
+.seoWhyBox{
+	width: 100%;
+	min-height: 200px;
+	overflow: hidden;
+	float: left;
+	margin-top: 45px;
+}
+
+.seoWhyBox .head{
+	text-align: center;
+	color: #434343;
+	font-size: 34px;
+	font-weight: bold;
+}
+.seoWhyBox .con{
+	text-align: left;
+	color: #434343;
+	font-size: 30px;
+	margin-top: 30px;
+	line-height: 40px;
+}
+
+.contactHead{
+	width: 100%;
+	height: 173px;
+	background: #e5e5e5;
+	margin-top: 40px;
+	/*z-index: 1;*/
+}
+
+.contactHead .bigWord{
+	color: #474747;
+	font-size: 36px;
+	text-align: center;
+	padding-top: 45px;
+}
+
+.contactHead .smallWord{
+	color: #acacac;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 15px;
+}
+.contactHead .line{
+	width: 85px;
+	height: 6px;
+	background: #19a3e5;
+	margin:auto;
+	margin-top: 15px;
+}
+
+.contactList{
+	width: 440px;
+	height: 90px;
+	border: 1px solid #23beff;
+	margin: auto;
+	position: relative;
+	margin-top: 78px;
+	text-align: center;
+	line-height: 90px;
+	font-size: 40px;
+	color: #3a3a3a;
+}
+.contactTelIcon{
+	width:62px;
+	height:59px;
+	background: url(../images/allicon.png);
+	background-position:-521px -680px;
+	position: absolute;
+	left: 50%;
+	margin-left: -31px;
+	top:-52px; 
+	z-index: 999;
+}
+.contactPhoneIcon{
+	width:34px;
+	height:61px;
+	background: url(../images/allicon.png);
+	background-position:-607px -681px;
+	position: absolute;
+	left: 50%;
+	margin-left: -17px;
+	top:-52px; 
+	z-index: 999;
+}
+.contactQQIcon{
+	width:62px;
+	height:68px;
+	background: url(../images/allicon.png);
+	background-position:-661px -678px;
+	position: absolute;
+	left: 50%;
+	margin-left: -31px;
+	top:-58px; 
+	z-index: 999;
+}
+
+.contactadressIcon{
+	width:52px;
+	height:68px;
+	background: url(../images/allicon.png);
+	background-position:-735px -676px;
+	position: absolute;
+	left: 50%;
+	margin-left: -26px;
+	top:-57px; 
+	z-index: 999;	
+}
+
+.foot{
+	width: 100%;
+	height: 125px;
+	background: #5d6167;
+	margin-top: 62px;
+}
+.foot p{
+	text-indent: 50px;
+	text-align: left;
+	font-size: 20px;
+	color: #b5b6b9;
+	margin-top: 10px;
+}

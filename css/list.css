@@ -1,0 +1,1901 @@
+@charset "utf-8";
+* {
+  margin: 0px; 
+  padding: 0px;
+  font-family: "微软雅黑";
+}
+a{ 
+	text-decoration: none; 
+}
+li{ 
+	list-style-type: none; 
+	font-size: 12px; 
+	color: #ffffff;
+}
+img{
+	border: none;
+}
+.fl{ 
+	float: left;
+}
+.fr{ 
+	float: right;
+}
+.re{
+	position: relative;
+}
+
+.allBox{
+	width: 720px;
+	min-height: 1280px;
+	overflow: hidden;
+	position: relative;
+}
+
+.leftNav{
+	width: 402px;
+	height: 1280px;
+	position: absolute;
+	left: -403px;
+	top: 0px;
+	background: #f9f9f9;
+	border-right: 1px solid #cdcccc;
+	z-index: -8;
+}
+
+.empty{
+	width: 100%;
+	height: 64px;
+}
+
+.leftNavList{
+	display: block;
+	width: 100%;
+	height: 85px;
+	text-align: center;
+	line-height: 85px;
+	color: #1b1b1b;
+	font-size: 34px;
+	position: relative;
+}
+
+.leftNavLine{
+	width: 100%;
+	height: 1px;
+	background: url(../images/allicon.png) top center;
+	background-position:-17px -57px;
+
+}
+.navIcon{
+	background: url(../images/allicon.png);
+	position: absolute;
+}
+
+.leftNavIcon1{
+	width:26px;
+	height:33px;
+	background-position:-111px -10px;
+	left: 75px;
+	top: 25px;
+}
+.leftNavIcon2{
+	width:22px;
+	height:32px;
+	background-position:-148px -11px;
+	left: 77px;
+	top: 31px;
+}
+
+.leftNavIcon3{
+	width:36px;
+	height:31px;
+	background-position:-182px -12px;
+	left: 70px;
+	top: 30px;
+}
+
+.leftNavIcon4{
+	width:38px;
+	height:28px;
+	background-position:-228px -13px;
+	left: 70px;
+	top: 30px;
+}
+
+.leftNavIcon5{
+	width:29px;
+	height:29px;
+	background-position:-276px -13px;
+	left: 73px;
+	top: 31px;
+}
+.leftNavIcon6{
+	width:32px;
+	height:33px;
+	background-position:-313px -8px;
+	left: 72px;
+	top: 28px;			
+}
+.leftNavIcon7{
+	width:32px;
+	height:33px;
+	background-position:-357px -6px;
+	left: 73px;
+	top: 29px;
+}
+.leftNavIcon8{
+	width:32px;
+	height:33px;
+	background-position:-398px -5px;
+	left: 73px;
+	top: 29px;
+}
+.leftNavIcon9{
+	width:24px;
+	height:33px;
+	background-position:-442px -6px;
+	left: 76px;
+	top: 28px;
+}
+
+.leftNavIcon10{
+	width:31px;
+	height:33px;
+	background-position:-482px -5px;
+	left: 73px;
+	top: 29px;
+}
+
+.main{
+	width: 720px;
+	min-height: 1280px;
+	float: left;
+	background: #FFF;
+	position: relative;
+	z-index: 999;
+}
+
+.header{
+	width: 100%;
+	height: 97px;
+	position: relative;
+}
+
+.navBtn{
+	display: block;
+	width:38px;
+	height:35px;
+	background: url(../images/allicon.png);
+	background-position:-10px -10px;
+	float: left;
+	margin-left: 40px;
+	margin-top: 30px;
+}
+
+.logo{
+	display: block;
+	float: left;
+	margin-left: 180px;
+	margin-top: 23px;
+}
+
+.phoneBtn{
+	display: block;
+	width:36px;
+	height:41px;
+	background: url(../images/allicon.png);
+	background-position:-64px -7px;
+	float: right;
+	margin-right: 42px;
+	margin-top: 31px;
+
+}
+
+.mainCon{
+	width: 100%;
+	min-height: 1280px;
+	overflow: hidden;
+}
+
+.foot{
+	width: 100%;
+	height: 125px;
+	background: #5d6167;
+}
+.foot p{
+	text-indent: 50px;
+	text-align: left;
+	font-size: 20px;
+	color: #b5b6b9;
+	margin-top: 10px;
+}
+
+
+.listBanner{
+	width: 100%;
+	height: 240px;
+	background: url(../images/listBannerBg.jpg) top center;
+}
+
+.listBanner .bigWord{
+	float: left;
+	width: 100%;
+	text-indent: 58px;
+	margin-top: 76px;
+	color: #ffffff;
+	font-size: 43px;
+	text-align: left;
+}
+
+
+.listBanner .smallWord{
+	float: left;
+	width: 100%;
+	text-indent:58px;
+	margin-top: 10px;
+	color: #ffffff;
+	font-size: 28px;
+	text-align: left;
+}
+
+.appInfo{
+	width: 100%;
+	height: 488px;
+}
+
+.appInfo .head{
+	width: 100%;
+	height: 160px;
+	margin-top: 35px;
+}
+
+.appInfo .head .leftIcon{
+	width:102px;
+	height:159px;
+	background: url(../images/listicon.png);
+	background-position:-2px -67px;
+	float: left;
+	margin-left: 92px;
+}
+
+.appInfo .head  p{
+	width: 455px;
+	float: left;
+	color: #626262;
+	font-size: 28px;
+	text-indent: 50px;
+}
+
+.appInfo .head  p b{
+	color: #00a0e9;
+	font-size: 34px;
+	font-weight: bold;
+}
+
+.appInfoList{
+	float: left;
+	margin-left: 60px;
+	margin-top: 55px;
+}
+.appInfoList .topWord{
+	text-align: center;
+	color: #707070;
+	font-size: 28px;
+}
+
+.appInfoList .numWord{
+	text-align: center;
+	color: #989898;
+	font-size: 24px;
+}
+
+.appInfoList .numWord b{
+	font-family: "Georgia";
+	color: #00a0e9;
+	font-size: 36px;
+}
+
+.appAdvantage{
+	width: 100%;
+	min-height: 300px;
+	overflow: hidden;
+	background: #f9f9f9;
+}
+.boxHead{
+	width: 100%;
+	height:56px; 
+	text-align: center;
+	float: left;
+	margin-top: 38px;
+	font-size: 32px;
+	color: #7d7d7d;
+	position: relative;
+	/*font-weight: bold;*/
+}
+.boxHead .line{
+	width: 48px;
+	height: 6px;
+	background: #4ec3e3;
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	margin-left: -24px;
+}
+
+.appAdvantageList{
+	float: left;
+	width: 182px;
+	height: 182px;
+	border-radius: 182px;
+	margin-left: 40px;
+	margin-bottom: 38px;
+	position: relative;
+}
+.appAdvantageList p{
+	text-align: center;
+	color: #626262;
+	font-size: 24px;
+	margin-top: 25px;
+}
+
+.border63cd78{
+	border: 1px solid #63cd78;
+}
+.bordere9b946{
+	border: 1px solid #e9b946;
+}
+.borderea6767{
+	border: 1px solid #ea6767;
+}
+.border6bcbe7{
+	border: 1px solid #6bcbe7;
+}
+
+.borderf4853e{
+	border: 1px solid #f4853e;
+}
+.bordere772dc{
+	border: 1px solid #e772dc;
+}
+.border54b0ef{
+	border: 1px solid #54b0ef;
+}
+.border49d7bb{
+	border: 1px solid #49d7bb;
+}
+
+.border7294eb{
+	border: 1px solid #7294eb;
+}
+
+
+.appAdvantageList .num1{
+	width:25px;
+	height:59px;
+	background: url(../images/listicon.png) ;
+	background-position:0 0;
+	position: absolute;
+	left: -2px;
+	top: 25px;
+}
+
+.appAdvantageList .icon1{
+	width:70px;
+	height:73px;
+	background: url(../images/listicon.png) ;
+	background-position:-360px -2px;
+	margin: auto;
+	margin-top: 18px;
+}
+
+.appAdvantageList .num2{
+	width:42px;
+	height:59px;
+	background: url(../images/listicon.png)#f9f9f9;
+	background-position:-41px 0;
+	position: absolute;
+	left: -5px;
+	top: 25px;
+}
+
+.appAdvantageList .icon2{
+	width:69px;
+	height:75px;
+	background: url(../images/listicon.png);
+	background-position:-430px 0;
+	margin: auto;
+	margin-top: 18px;
+}
+.appAdvantageList .num3{
+	width:43px;
+	height:59px;
+	background: url(../images/listicon.png)#f9f9f9;
+	background-position:-87px -1px;
+	position: absolute;
+	left: -5px;
+	top: 25px;
+}
+
+.appAdvantageList .icon3{
+	width:69px;
+	height:69px;
+	background: url(../images/listicon.png);
+	background-position:-504px -2px;
+	margin: auto;
+	margin-top: 18px;
+}
+
+.appAdvantageList .num4{
+	width:44px;
+	height:58px;
+	background: url(../images/listicon.png)#f9f9f9;
+	background-position:-130px 0;
+	position: absolute;
+	left: -5px;
+	top: 38px;
+}
+
+.appAdvantageList .icon4{
+	width:55px;
+	height:87px;
+	background: url(../images/listicon.png);
+	background-position:-585px -1px;
+	margin: auto;
+	margin-top: 18px;
+}
+
+.appAdvantageList .num5{
+	width:44px;
+	height:58px;
+	background: url(../images/listicon.png)#f9f9f9;
+	background-position:-175px 0;
+	position: absolute;
+	left: -5px;
+	top: 38px;
+}
+
+.appAdvantageList .icon5{
+	width:73px;
+	height:76px;
+	background: url(../images/listicon.png);
+	background-position:-644px -2px;
+	margin: auto;
+	margin-top: 18px;
+}
+
+.appAdvantageList .num6{
+	width:43px;
+	height:58px;
+	background: url(../images/listicon.png)#f9f9f9;
+	background-position:-225px -1px;
+	position: absolute;
+	left: -5px;
+	top: 38px;
+}
+
+.appAdvantageList .icon6{
+	width:77px;
+	height:72px;
+	background: url(../images/listicon.png);
+	background-position:-721px 0;
+	margin: auto;
+	margin-top: 18px;
+}
+
+.appAdvantageList .num7{
+	width:41px;
+	height:58px;
+	background: url(../images/listicon.png)#f9f9f9;
+	background-position:-269px 0;
+	position: absolute;
+	left: -5px;
+	top: 38px;
+}
+
+.appAdvantageList .icon7{
+	width:67px;
+	height:73px;
+	background: url(../images/listicon.png);
+	background-position:-803px -3px;
+	margin: auto;
+	margin-top: 18px;
+}
+
+.appAdvantageList .num8{
+	width:44px;
+	height:59px;
+	background: url(../images/listicon.png)#f9f9f9;
+	background-position:-310px 0;
+	position: absolute;
+	left: -5px;
+	top: 38px;
+}
+
+.appAdvantageList .icon8{
+	width:75px;
+	height:76px;
+	background: url(../images/listicon.png);
+	background-position:-872px -2px;
+	margin: auto;
+	margin-top: 18px;
+}
+.appAdvantageList .num9{
+	width:44px;
+	height:58px;
+	background: url(../images/listicon.png)#f9f9f9;
+	background-position:-954px -7px;
+	position: absolute;
+	left: -5px;
+	top: 38px;
+}
+
+.appAdvantageList .icon9{
+	width:68px;
+	height:72px;
+	background: url(../images/listicon.png);
+	background-position:-114px -66px;
+	margin: auto;
+	margin-top: 18px;
+}
+
+.zmitAdvantage{
+	width: 100%;
+	min-height: 300px;
+	overflow: hidden;
+	background: #f9f9f9;
+}
+.zmitAdvantageListLeft,.zmitAdvantageListRight{
+	width: 100%;
+	min-height: 160px;
+	overflow: hidden;
+	margin-top: 25px;
+}
+.zmitAdvantageListLeft .bigWord{
+	width: 485px;
+	float: left;
+	text-align: left;
+	color: #00a0e9;
+	font-size: 36px;
+	margin-top: 30px;
+	margin-left: 57px;
+	font-weight: bold;
+}
+.zmitAdvantageListLeft .smallWord{
+	width: 485px;
+	float: left;
+	text-align: left;
+	color: #7d7d7d;
+	font-size: 28px;
+	margin-top: 15px;
+	margin-left: 57px;
+}
+
+.zmitAdvantageListRight .bigWord{
+	width: 485px;
+	float: right;
+	text-align: right;
+	color: #00a0e9;
+	font-size: 36px;
+	margin-top: 30px;
+	margin-right: 30px;
+	font-weight: bold;
+}
+.zmitAdvantageListRight .smallWord{
+	width: 485px;
+	float: right;
+	text-align: right;
+	color: #7d7d7d;
+	font-size: 28px;
+	margin-top: 15px;
+	margin-right: 30px;
+}
+
+.zmitAdvantageListLeft .numIcon1{
+	width:51px;
+	height:111px;
+	float: left;
+	background: url(../images/listicon.png);
+	background-position:-193px -96px;
+	margin-left: 49px;
+}
+
+.zmitAdvantageListRight .numIcon2{
+	width:80px;
+	height:113px;
+	float: right;
+	background: url(../images/listicon.png);
+	background-position:-267px -92px;
+	margin-right: 49px;
+}
+
+.zmitAdvantageListLeft .numIcon3{
+	width:81px;
+	height:114px;
+	float: left;
+	background: url(../images/listicon.png);
+	background-position:-358px -93px;
+	margin-left: 49px;
+}
+
+.zmitAdvantageListRight .numIcon4{
+	width:85px;
+	height:113px;
+	float: right;
+	background: url(../images/listicon.png);
+	background-position:-444px -91px;
+	margin-right: 49px;
+}
+
+.zmitAdvantageListLeft .numIcon5{
+	width:80px;
+	height:113px;
+	float: left;
+	background: url(../images/listicon.png);
+	background-position:-552px -91px;
+	margin-left: 49px;
+}
+.zmitAdvantageListRight .numIcon6{
+	width:81px;
+	height:116px;
+	float: right;
+	background: url(../images/listicon.png);
+	background-position:-641px -90px;
+	margin-right: 49px;
+}
+
+.appMore{
+
+	width: 398px;
+	height: 98px;
+	border: 1px solid #00a0e9;
+	margin: auto;
+	margin-top: 50px;
+	text-align: center;
+	line-height: 98px;
+	color: #00a0e9;
+	font-size: 36px;
+	margin-bottom: 40px;
+}
+
+
+.tapBox{
+	width: 100%;
+	height: 955px;
+	background: #f9f9f9;
+}
+
+
+/*横向滚动CSS*/
+#iSlider-effect-wrapper {
+	width: 100%;
+    height: 855px;
+    background-size: 100%;
+    overflow: hidden;
+    position: relative;
+}
+#animation-effect {
+  border: 0;
+  width: 100%;
+  height: 855px;
+}
+
+.iSlider-effect {
+  height: 310.5px;
+  width: 225px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  border: 1px solid #000000;
+}
+
+.iSlider-effect ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+.iSlider-effect li {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  list-style: none;
+}
+.iSlider-effect ul li img{
+  margin: auto;
+  padding: 0;
+}
+
+.iSlider-effect div{
+  background-color: #ffffff;
+  padding: 3px;
+}
+#menu-select {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#menu-select span {
+  display: inline-block;
+  border: 2px solid #777;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  width: 60px;
+  cursor: pointer;
+}
+
+/*结束*/
+
+
+.processBox{
+	width: 100%;
+	min-height: 520px;
+	overflow: hidden;
+}
+
+.processBoxShow{
+	float: left;
+	width: 100%;
+	height: 590px;
+	margin-top: 15px;
+	background: url(../images/processBg.png) top center no-repeat;
+}
+.processBoxShow2{
+	float: left;
+	width: 100%;
+	height: 721px;
+	margin-top: 15px;
+	background: url(../images/processBg2.png) top center no-repeat;
+}
+
+.processListLeft,.processListRight{
+	width: 100%;
+	min-height: 75px;
+	overflow: hidden;
+	margin: auto;
+	position: relative;
+}
+
+.processListLeft .wordBox{
+	width: 338px;
+	float: left;
+	text-align: right;
+}
+
+.processListLeft .wordBox .chWord{
+	color: #00a0e9;
+	font-size: 32px;
+}
+.processListLeft .wordBox .enWord{
+	color: #a9a9a9;
+	font-size: 24px;
+}
+
+.processRound{
+	width: 8px;
+	height: 8px;
+	background: #00a0e9;
+	border-radius: 8px;
+	position: absolute;
+	left: 50%;
+	top: 20px;
+	margin-left: -4px;
+}
+
+.processListRight .wordBox{
+	width: 320px;
+	float: left;
+	text-align: left;
+	margin-left: 40px;
+}
+
+.processListRight .wordBox .chWord{
+	color: #00a0e9;
+	font-size: 32px;
+}
+.processListRight .wordBox .enWord{
+	color: #a9a9a9;
+	font-size: 24px;
+}
+
+.processnum1{
+	width:42px;
+	height:34px;
+	background: url(../images/listicon.png);
+	background-position:-739px -93px;
+	float: left;
+	margin-left: 39px;
+	margin-top: 8px;
+}
+
+.processnum2{
+	width:51px;
+	height:34px;
+	background: url(../images/listicon.png);
+	background-position:-789px -92px;
+	float: left;
+	margin-left: 295px;
+	margin-top: 8px;
+}
+.processnum3{
+	width:51px;
+	height:34px;
+	background: url(../images/listicon.png);
+	background-position:-847px -92px;
+	float: left;
+	margin-left: 39px;
+	margin-top: 8px;
+}
+.processnum4{
+	width:51px;
+	height:34px;
+	background: url(../images/listicon.png);
+	background-position:-903px -92px;
+	float: left;
+	margin-left: 295px;
+	margin-top: 8px;
+}
+.processnum5{
+	width:51px;
+	height:34px;
+	background: url(../images/listicon.png);
+	background-position:-739px -134px;
+	float: left;
+	margin-left: 39px;
+	margin-top: 8px;
+}
+.processnum6{
+	width:51px;
+	height:34px;
+	background: url(../images/listicon.png);
+	background-position:-937px -473px;
+	float: left;
+	margin-left: 295px;
+	margin-top: 8px;
+}
+.processnum7{
+	width:51px;
+	height:34px;
+	background: url(../images/listicon.png);
+	background-position:-938px -519px;
+	float: left;
+	margin-left: 39px;
+	margin-top: 8px;
+}
+
+
+
+.weChatBox{
+	width:672px;
+	min-height: 500px;
+	overflow: hidden;
+	margin: auto;
+}
+
+.weChatHead{
+	width: 100%;
+	min-height: 200px;
+	overflow: hidden;
+	float: left;
+	margin-top: 35px;
+}
+
+.weChatIcon{
+	width:150px;
+	height:150px;
+	background: url(../images/allicon.png);
+	background-position:0 -113px;
+	float: left;
+	margin-left: 35px;
+}
+
+.weChatHead p{
+	float: left;
+	width: 430px;
+	font-size: 28px;
+	color: #1b1b1b;
+	text-align: left;
+	line-height: 40px;
+	margin-left: 40px;
+	margin-top: 20px;
+}
+.weChatHead p span{
+	color: #5fbf1e;
+	font-size: 35px;
+	line-height: 32px;
+}
+
+.weChatHeadLine{
+	width: 430px;
+	height: 1px;
+	float: left;
+	background: #d6eec5;
+	overflow: hidden;
+	zoom:1;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+.weChatInfo{
+	float: left;
+	width: 336px;
+	height: 75px;
+	margin-top: 40px;
+}
+.weChatInfo .top{
+	text-align: center;
+	font-size: 24px;
+	color: #959595;
+}
+
+.weChatInfo .down{
+	text-align: center;
+	font-size: 20px;
+	color: #989898;
+	line-height: 45px;
+}
+.weChatInfo .down b{
+	color: #333333;
+	font-size: 31px;
+	font-family: "Georgia";
+
+}
+.weChatRound{
+	width: 100%;
+	height: 700px;
+	float: left;
+	overflow: hidden;
+}
+
+.weChatRoundShow{
+	width: 750px;
+	float: left;
+	margin-left: -33px;
+}
+.weChatRoundList{
+	width: 140px;
+	height: 140px;
+	border: 1px solid #acacac;
+	border-radius: 140px;
+	float: left;
+	margin-left: 33px;
+	margin-top: 30px;
+}
+.weChatRoundList .icon1{
+	width:52px;
+	height:52px;
+	background: url(../images/allicon.png);
+	background-position:-154px -113px;
+	margin: auto;
+	margin-top: 31px;
+	margin-bottom: 10px;
+}
+.weChatRoundList p{
+	text-align: center;
+	font-size: 20px;
+	color: #505050;
+}
+.weChatRoundList .icon2{
+	width:55px;
+	height:55px;
+	background: url(../images/allicon.png);
+	background-position:-212px -109px;
+	margin: auto;
+	margin-top: 28px;
+	margin-bottom: 10px;
+}
+
+.weChatRoundList .icon3{
+	width:58px;
+	height:49px;
+	background: url(../images/allicon.png);
+	background-position:-272px -113px;
+	margin: auto;
+	margin-top: 34px;
+	margin-bottom: 10px;
+}
+
+.weChatRoundList .icon4{
+	width:58px;
+	height:49px;
+	background: url(../images/allicon.png);
+	background-position:-336px -113px;
+	margin: auto;
+	margin-top: 34px;
+	margin-bottom: 10px;
+}
+
+.weChatRoundList .icon5{
+	width:49px;
+	height:49px;
+	background: url(../images/allicon.png);
+	background-position:-405px -115px;
+	margin: auto;
+	margin-top: 34px;
+	margin-bottom: 10px;
+}
+
+.weChatRoundList .icon6{
+	width:54px;
+	height:50px;
+	background: url(../images/allicon.png);
+	background-position:-462px -114px;
+	margin: auto;
+	margin-top: 33px;
+	margin-bottom: 10px;
+}
+.weChatRoundList .icon7{
+	width:62px;
+	height:35px;
+	background: url(../images/allicon.png);
+	background-position:-523px -114px;
+	margin: auto;
+	margin-top: 43px;
+	margin-bottom: 10px;
+}
+.weChatRoundList .icon8{
+	width:50px;
+	height:48px;
+	background: url(../images/allicon.png);
+	background-position:-591px -114px;
+	margin: auto;
+	margin-top: 32px;
+	margin-bottom: 10px;
+}
+
+.weChatRoundList .icon9{
+	width:54px;
+	height:54px;
+	background: url(../images/allicon.png);
+	background-position:-652px -109px;
+	margin: auto;
+	margin-top: 24px;
+	margin-bottom: 10px;
+}
+
+.weChatRoundList .icon10{
+	width:55px;
+	height:56px;
+	background: url(../images/allicon.png);
+	background-position:-711px -107px;
+	margin: auto;
+	margin-top: 27px;
+	margin-bottom: 10px;
+}
+
+.weChatRoundList .icon11{
+	width:55px;
+	height:51px;
+	background: url(../images/allicon.png);
+	background-position:-154px -176px;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+.weChatRoundList .icon12{
+	width:64px;
+	height:51px;
+	background: url(../images/allicon.png);
+	background-position:-217px -176px;
+	margin: auto;
+	margin-top: 36px;
+	margin-bottom: 10px;
+}
+.weChatRoundList .icon13{
+	width:52px;
+	height:52px;
+	background: url(../images/allicon.png);
+	background-position:-287px -169px;
+	margin: auto;
+	margin-top: 23px;
+	margin-bottom: 10px;
+}
+
+.weChatRoundList .icon14{
+	width:45px;
+	height:44px;
+	background: url(../images/allicon.png);
+	background-position:-347px -177px;
+	margin: auto;
+	margin-top: 32px;
+	margin-bottom: 10px;
+}
+
+.weChatRoundList .icon15{
+	width:47px;
+	height:50px;
+	background: url(../images/allicon.png);
+	background-position:-405px -172px;
+	margin: auto;
+	margin-top: 31px;
+	margin-bottom: 10px;
+}
+
+.weChatRoundList .icon16{
+	width:65px;
+	height:17px;
+	background: url(../images/allicon.png);
+	background-position:-466px -186px;
+	margin: auto;
+	margin-top: 53px;
+	margin-bottom: 10px;
+}
+
+.weChatSort{
+	float: left;
+	width: 100%;
+	height: 450px;
+	background: #f9f9f9;
+	margin-top: 35px;
+}
+
+.weChatSortList{
+	float: left;
+	width: 178px;
+	height: 283px;
+	border: 1px solid #b5b5b5;
+	margin-left: 32px;
+	margin-top: 30px;
+	background: #FFF;
+}
+
+.weChatSortList .icon1{
+	width:95px;
+	height:94px;
+	background: url(../images/listicon.png);
+	background-position:-3px -233px;
+	margin: auto;
+	margin-top: 16px;	
+}
+
+.weChatSortList .bigWord{
+	text-align: center;
+	color: #505050;
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 16px;
+}
+.weChatSortList .smallWord{
+	text-align: left;
+	color: #a7a7a7;
+	padding: 17px;
+	font-size: 24px;
+}
+
+.weChatSortList .icon2{
+	width:95px;
+	height:94px;
+	background: url(../images/listicon.png);
+	background-position:-99px -228px;
+	margin: auto;
+	margin-top: 16px;	
+}
+.weChatSortList .icon3{
+	width:95px;
+	height:94px;
+	background: url(../images/listicon.png);
+	background-position:-198px -227px;
+	margin: auto;
+	margin-top: 16px;	
+}
+
+.fz28{
+	font-size: 28px !important;
+}
+.fz36{
+	font-size: 36px !important;
+	color: #61c01e !important;
+}
+
+
+.webInfo{
+	width: 100%;
+	height: 550px;
+	background: #f9f9f9;
+	position: relative;
+}
+
+.webInfo .head{
+	width: 100%;
+	height: 132px;
+	float: left;
+	margin-top: 35px;
+	position: relative;
+}
+
+.webInfo .head .icon{
+	width:249px;
+	height:135px;
+	background: url(../images/listicon.png);
+	background-position:-307px -225px;
+	float: left;
+	margin-left: 60px;
+}
+.webInfo .head p{
+	position: absolute;
+	width: 440px;
+	font-size: 28px;
+	color: #626262;
+}
+.webInfo .head p span{
+	font-size: 34px;
+	color: #00a0e9;
+	font-weight: bold;
+}
+.webInfo .head .p1{
+	left: 262px;
+	top: 21px;
+}
+.webInfo .head .p2{
+	left: 262px;
+	top: 72px;
+}
+
+.webInfoList{
+	width:153px;
+	height:176px;
+	background: url(../images/listicon.png);
+	background-position:-573px -215px;
+	position: absolute;
+}
+.webInfoList p{
+	text-align: center;
+	color: #313131;
+	font-size: 20px;
+	margin-top: 10px;
+}
+.webInfo1{
+	left: 57px;
+	top: 205px;
+}
+
+.webInfo1 .icon{
+	width:60px;
+	height:56px;
+	background: url(../images/listicon.png);
+	background-position:-807px -145px;
+	margin: auto;
+	margin-top: 40px;
+
+}
+
+.webInfo2{
+	left: 209px;
+	top: 205px;
+}
+
+.webInfo2 .icon{
+	width:66px;
+	height:54px;
+	background: url(../images/listicon.png);
+	background-position:-872px -145px;
+	margin: auto;
+	margin-top: 40px;
+
+}
+
+.webInfo3{
+	left: 361px;
+	top: 205px;
+}
+
+.webInfo3 .icon{
+	width:56px;
+	height:59px;
+	background: url(../images/listicon.png);
+	background-position:-940px -140px;
+	margin: auto;
+	margin-top: 40px;
+}
+
+.webInfo4{
+	left: 511px;
+	top: 205px;
+}
+
+.webInfo4 .icon{
+	width:55px;
+	height:55px;
+	background: url(../images/listicon.png);
+	background-position:-733px -218px;
+	margin: auto;
+	margin-top: 40px;
+}
+.webInfo5{
+	left: 133px;
+	top: 336px;
+}
+
+.webInfo5 .icon{
+	width:54px;
+	height:57px;
+	background: url(../images/listicon.png);
+	background-position:-797px -216px;
+	margin: auto;
+	margin-top: 40px;
+}
+
+.webInfo6{
+	left: 285px;
+	top: 336px;
+}
+
+.webInfo6 .icon{
+	width:56px;
+	height:57px;
+	background: url(../images/listicon.png);
+	background-position:-858px -215px;
+	margin: auto;
+	margin-top: 40px;
+}
+
+.webInfo7{
+	left: 437px;
+	top: 336px;
+}
+
+.webInfo7 .icon{
+	width:55px;
+	height:55px;
+	background: url(../images/listicon.png);
+	background-position:-917px -218px;
+	margin: auto;
+	margin-top: 40px;
+}
+
+.webType{
+	width: 100%;
+	height: 835px;
+	background: #FFF;
+}
+
+.webTypeList{
+	width: 700px;
+	height: 167px;
+	border-bottom: 1px solid #edeff2;
+	margin: auto;
+	clear: both;
+}
+
+.webTypeIcon1{
+	float: left;
+	width:208px;
+	height:168px;
+	background: url(../images/listicon.png);
+	background-position:-3px -349px;
+}
+
+.webTypeWord1{
+	min-width:210px;
+	overflow: hidden; 
+	float: left;
+	margin-left: 45px;
+	margin-top: 10px;
+}
+.webTypeWord1 .bigWord{
+	color: #eb6100;
+	font-size: 48px;
+	text-align: left;
+	margin-bottom: 12px;
+}
+.webTypeWord1 .bigWord span{
+	float: right;
+	font-size: 38px;
+	margin-top: 5px;
+	margin-left: 15px;
+}
+.webTypeWord1 .smallWord{
+	color: #535353;
+	font-size: 18px;
+}
+
+.webTypeNum1{
+	float: right;
+	margin-right: 40px;
+	margin-top: 48px;
+	width:88px;
+	height:72px;
+	background: url(../images/listicon.png);
+	background-position:-736px -279px;
+}
+
+
+.webTypeNum2{
+	float: left;
+	margin-left: 50px;
+	margin-top: 48px;
+	width:106px;
+	height:72px;
+	background: url(../images/listicon.png);
+	background-position:-832px -278px;
+}
+
+.webTypeWord2{
+	min-width:210px;
+	overflow: hidden; 
+	float: left;
+	margin-left: 70px;
+	margin-top: 10px;
+}
+.webTypeWord2 .bigWord{
+	color: #0068b7;
+	font-size: 48px;
+	text-align: right;
+	margin-bottom: 12px;
+}
+.webTypeWord2 .bigWord span{
+	float: left;
+	font-size: 38px;
+	margin-top: 5px;
+	margin-right: 15px;
+}
+.webTypeWord2 .smallWord{
+	color: #535353;
+	font-size: 18px;
+	text-align: right;
+}
+.webTypeIcon2{
+	float: right;
+	width:208px;
+	height:168px;
+	background: url(../images/listicon.png);
+	background-position:-10px -526px;
+}
+
+
+.webAdvantage{
+	width: 100%;
+	height: 660px;
+	background: #f9f9f9;
+}
+
+.webAdvantageList{
+	width: 155px;
+	height: 155px;
+	float: left;
+	background: url(../images/listicon.png);
+}
+
+.webAdvantageRound1{
+	background-position:-443px -377px;
+	margin-left: 78px;
+}
+
+.webAdvantageRound2{
+	background-position:-449px -533px;
+	margin-left: 50px;
+}
+
+.webAdvantageRound3{
+	background-position:-611px -432px;
+	margin-left: 50px;
+}
+.webAdvantageRound4{
+	background-position:-773px -433px;
+	margin-left: 78px;
+	margin-top: 50px;
+}
+
+.webAdvantageRound5{
+	background-position:-622px -590px;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+.webAdvantageRound6{
+	background-position:-779px -589px;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+
+
+.softwareInfo{
+	width: 100%;
+	height: 860px;
+}
+
+.softwareInfoBS,.softwareInfoCS{
+	float: left;
+	width: 100%;
+	height: 360px;
+	margin-top: 25px;
+}
+
+.softwareInfoBS .round{
+	float: left;
+	margin-left: 58px;
+	margin-top: 10px;
+	width: 97px;
+	height: 97px;
+	border-radius: 97px;
+	border: 1px solid #00a0e9;
+	text-align: center;
+	color: #00a0e9;
+	font-size: 27px;
+	line-height: 25px
+}
+.softwareInfoBS .wordBox{
+	width: 482px;
+	height: 360px;
+	float: left;
+	margin-left: 20px;
+	background: url(../images/softwareBox.png);
+
+}
+
+.softwareInfoBS .wordBox p{
+	padding: 20px 37px 0px 63px;
+	color: #626262;
+	font-size: 28px;
+	text-align: left;
+	line-height: 50px;
+}
+.softwareInfoBS .wordBox p span{
+	font-weight: bold;
+	color: #00a0e9;
+}
+
+
+
+.softwareInfoCS .round{
+	float: right;
+	margin-right: 60px;
+	margin-top: 10px;
+	width: 97px;
+	height: 97px;
+	border-radius: 97px;
+	border: 1px solid #00a0e9;
+	text-align: center;
+	color: #00a0e9;
+	font-size: 27px;
+	line-height: 25px
+}
+.softwareInfoCS .wordBox{
+	width: 482px;
+	height: 310px;
+	float: left;
+	margin-left: 60px;
+	background: url(../images/softwareBox2.png);
+
+}
+
+.softwareInfoCS .wordBox p{
+	padding: 20px 63px 0px  37px;
+	color: #626262;
+	font-size: 28px;
+	text-align: left;
+	line-height: 50px;
+}
+.softwareInfoCS .wordBox p span{
+	font-weight: bold;
+	color: #00a0e9;
+}
+
+.softwareAdvantageAll{
+	width: 100%;
+	min-height: 730px;
+	overflow: hidden;
+	background: #f9f9f9;
+}
+
+.softwareAdvantage{
+	float: left;
+	width: 100%;
+	min-height: 200px;
+	overflow: hidden;
+	margin-top: 40px;
+}
+.softwareAdvantage .head{
+	width: 250px;
+	height: 36px;
+	margin: auto;
+	position: relative;
+	text-align: center;
+	line-height: 36px;
+	text-align: center;
+}
+.softwareAdvantage .head span{
+	color: #a0a0a0;
+	font-size: 34px;
+}
+.softwareAdvantage .head .leftIcon{
+	width:18px;
+	height:34px;
+	background: url(../images/allicon.png);
+	background-position:-614px -47px;
+	position: absolute;
+	left: 0px;
+	top: 50%;
+	margin-top: -17px;
+}
+.softwareAdvantage .head .rightIcon{
+	width:18px;
+	height:34px;
+	background: url(../images/allicon.png);
+	background-position:-641px -47px;
+	position: absolute;
+	right: 0px;
+	top: 50%;
+	margin-top: -17px;
+}
+.softwareAdvantageBox{
+	width: 100%;
+	height: 130px;
+	float: left;
+	margin-top: 35px;
+	
+}
+
+.softwareAdvantageList{
+	width: 110px;
+	height: 100%;
+	float: left;
+	margin-left: 68px;
+
+}
+.softwareAdvantageList .icon1{
+	width:88px;
+	height:88px;
+	background: url(../images/allicon.png);
+	background-position:-93px -488px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+.softwareAdvantageList p{
+	text-align: center;
+	color: #7d7d7d;
+	font-size: 26px;
+}
+
+.softwareAdvantageList .icon2{
+	width:88px;
+	height:88px;
+	background: url(../images/allicon.png);
+	background-position:-183px -488px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+.softwareAdvantageList .icon3{
+	width:88px;
+	height:88px;
+	background: url(../images/allicon.png);
+	background-position:-274px -488px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+.softwareAdvantageList .icon4{
+	width:88px;
+	height:88px;
+	background: url(../images/allicon.png);
+	background-position:-364px -488px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+.softwareAdvantageList .icon5{
+	width:88px;
+	height:88px;
+	background: url(../images/allicon.png);
+	background-position:-454px -486px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+.softwareAdvantageList .icon6{
+	width:88px;
+	height:88px;
+	background: url(../images/allicon.png);
+	background-position:-544px -486px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+.seoHeadBg{
+	width: 100%;
+	height: 470px;
+	background: #FFF;
+}
+
+.seoHead{
+	width: 615px;
+	height: 470px;
+	margin: auto;
+}
+
+.seoHead .leftIcon{
+	float: left;
+	width:128px;
+	height:175px;
+	background: url(../images/listicon2.png);
+	background-position:0 0;
+	margin-top: 35px;
+}
+
+.seoHead .topWord{
+	float: left;
+	width: 420px;
+	color: #00a0e9;
+	font-size: 36px;
+	text-align: left;
+	margin-top: 48px;
+	margin-left: 45px;
+	line-height: 48px;
+}
+
+.seoHead .bottomWord{
+	width: 100%;
+	float: left;
+	margin-top: 20px;
+	font-size: 30px;
+	color: #313131;
+	line-height: 50px;
+	letter-spacing: 1px;
+}
+.seoHead .bottomWord b{
+	font-size: 36px;
+	color: #00a0e9;
+} 
+
+.seoBox{
+	width:672px;
+	min-height: 500px;
+	overflow: hidden;
+	margin: auto;
+}
+
+.seoListLeft,.seoListRight{
+	float: left;
+	width: 672px;
+	min-height: 130px;
+	overflow: hidden;
+	margin-top: 30px;
+}
+
+.seoListLeft .icon1{
+	width:88px;
+	height:88px;
+	background: url(../images/allicon.png);
+	background-position:-623px -400px;
+	float: left;
+	margin-left: 40px;
+}
+.seoListLeft .head1{
+	width: 460px;
+	float: left;
+	margin-left: 25px;
+	color: #4ea15e;
+	font-size: 34px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 32px;
+}
+.seoListLeft .con{
+	width: 460px;
+	float: left;
+	margin-left: 25px;
+	color: #434343;
+	font-size: 28px;
+	text-align: left;
+	margin-top: 20px;
+}
+
+.seoListRight .icon2{
+	width:88px;
+	height:88px;
+	background: url(../images/allicon.png);
+	background-position:-712px -402px;
+	float: right;
+	margin-right: 40px;
+}
+.seoListRight .head2{
+	width: 460px;
+	float: right;
+	margin-right: 25px;
+	color: #d2a334;
+	font-size: 34px;
+	font-weight: bold;
+	text-align: right;
+	line-height: 32px;
+}
+.seoListRight .con{
+	width: 460px;
+	float: right;
+	margin-right: 25px;
+	color: #434343;
+	font-size: 28px;
+	text-align: right;
+	margin-top: 20px;
+}
+
+
+.seoListLeft .icon3{
+	width:88px;
+	height:88px;
+	background: url(../images/allicon.png);
+	background-position:-642px -490px;
+	float: left;
+	margin-left: 40px;
+}
+.seoListLeft .head3{
+	width: 460px;
+	float: left;
+	margin-left: 25px;
+	color: #5376d1;
+	font-size: 34px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 32px;
+}
+
+
+.seoListRight .icon4{
+	width:88px;
+	height:88px;
+	background: url(../images/allicon.png);
+	background-position:-478px -578px;
+	float: right;
+	margin-right: 40px;
+}
+.seoListRight .head4{
+	width: 460px;
+	float: right;
+	margin-right: 25px;
+	color: #d85050;
+	font-size: 34px;
+	font-weight: bold;
+	text-align: right;
+	line-height: 32px;
+}
+
+.seoListLeft .icon5{
+	width:88px;
+	height:88px;
+	background: url(../images/allicon.png);
+	background-position:-571px -578px;
+	float: left;
+	margin-left: 40px;
+}
+.seoListLeft .head5{
+	width: 460px;
+	float: left;
+	margin-left: 25px;
+	color: #329c95;
+	font-size: 34px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 32px;
+}
+
+.seoListRight .icon6{
+	width:88px;
+	height:88px;
+	background: url(../images/allicon.png);
+	background-position:-668px -578px;
+	float: right;
+	margin-right: 40px;
+}
+.seoListRight .head6{
+	width: 460px;
+	float: right;
+	margin-right: 25px;
+	color: #cb4bbe;
+	font-size: 34px;
+	font-weight: bold;
+	text-align: right;
+	line-height: 32px;
+}
+
+
+.seoBoxBg{
+	width: 100%;
+	min-height: 300px;
+	overflow: hidden;
+	background: #f9f9f9;
+}
