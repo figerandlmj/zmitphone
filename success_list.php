@@ -1,0 +1,195 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>成功案例</title>
+    <meta name="viewport" content="width=720,user-scalable=0" charset="utf-8">
+    <?php
+    require 'config.php';
+    $id = isset($_GET['id']) ? $_GET['id'] : 0;
+//    $catid = isset($_GET['cat_id']) ? $_GET['cat_id'] : 0;
+    if( $id==0 ){
+//        echo "<script> alert('非法访问！');parent.location.href='index.php'; </script>";
+        $data = $db -> query("SELECT `id`, `thumb`, `title` FROM `zmit_picture` WHERE catid IN (28,29,30,31,32,34,36) ORDER BY id DESC LIMIT 8") -> fetchAll();
+
+    }
+    else {
+//        echo $id;
+        $data = $db->query("SELECT `id`, `thumb`, `title` FROM `zmit_picture` WHERE catid =$id ORDER BY id DESC LIMIT 8")->fetchAll();
+    }
+    ?>
+    <link rel="stylesheet" type="text/css" href="css/list.css">
+    <link rel="stylesheet" type="text/css" href="css/read.css">
+</head>
+
+<body>
+<div class="allBox">
+    <div class="leftNav" style="z-index: 9999">
+        <div class="empty"></div>
+        <a class="leftNavList" href="index.php">
+            <span class="navIcon leftNavIcon1"></span>
+            中梦首页
+        </a>
+        <div class="leftNavLine"></div>
+        <a class="leftNavList" href="app.php">
+            <span class="navIcon leftNavIcon2"></span>
+            手机APP
+        </a>
+        <div class="leftNavLine"></div>
+        <a class="leftNavList" href="weChat.php">
+            <span class="navIcon leftNavIcon3"></span>
+            微信开发
+        </a>
+        <div class="leftNavLine"></div>
+        <a class="leftNavList" href="web.php">
+            <span class="navIcon leftNavIcon4"></span>
+            网站建设
+        </a>
+        <div class="leftNavLine"></div>
+        <a class="leftNavList" href="software.php">
+            <span class="navIcon leftNavIcon5"></span>
+            软件开发
+        </a>
+        <div class="leftNavLine"></div>
+        <a class="leftNavList" href="seo.php">
+            <span class="navIcon leftNavIcon6"></span>
+            网络推广
+        </a>
+        <div class="leftNavLine"></div>
+        <a class="leftNavList" href="about.html">
+            <span class="navIcon leftNavIcon7"></span>
+            关于中梦
+        </a>
+        <div class="leftNavLine"></div>
+        <a class="leftNavList" href="success_list.php">
+            <span class="navIcon leftNavIcon8"></span>
+            成功案例
+        </a>
+        <div class="leftNavLine"></div>
+        <a class="leftNavList" href="new.php">
+            <span class="navIcon leftNavIcon9"></span>
+            新闻动态
+        </a>
+        <div class="leftNavLine"></div>
+        <a class="leftNavList" href="contact.php">
+            <span class="navIcon leftNavIcon10"></span>
+            联系我们
+        </a>
+        <div class="leftNavLine"></div>
+    </div>
+    <div class="main">
+        <div class="header">
+            <div class="navBtn" ></div>
+            <img class="logo" src="images/logo.png">
+            <a class="phoneBtn" href="tel:0553-4925555"></a>
+        </div>
+        <div class="mainCon" id="mainCon">
+            <div class="listBanner">
+                <p class="bigWord">成功案例</p>
+                <p class="smallWord">成功案例是实力的最好证明</p>
+            </div>
+
+            <div class="successNav">
+                <?php if($id==0){
+                    echo "<a class='ml24 successNavSel' href='success_list.php?id=0'>所有案例</a>";
+                }else{
+                    echo "<a class='ml24 ' href='success_list.php?id=0'>所有案例</a>";
+                }
+                if($id==30){
+                    echo "<a class='successNavSel' href='success_list.php?id=30'>手机APP</a>";
+                }else{
+                    echo "<a  href='success_list.php?id=30'>手机APP</a>";
+
+                }
+                if($id==29){
+                    echo "<a class='successNavSel' href='success_list.php?id=29'>系统软件</a>";
+                }else{
+                    echo "<a  href='success_list.php?id=29'>系统软件</a>";
+
+                }
+                if($id==180){
+                    echo "<a class='ml32 successNavSel' href='success_list.php?id=180'>微信公众号</a>";
+                }else{
+                    echo "<a class='ml32' href='success_list.php?id=180'>微信公众号</a>";
+
+                }
+                if($id==34){
+                    echo "<a class='ml24 successNavSel' href='success_list.php?id=34'>手机网站</a>";
+                }else{
+                    echo "<a class='ml24' href='success_list.php?id=34'>手机网站</a>";
+
+                }
+                if($id==31){
+                    echo "<a class=' successNavSel' href='success_list.php?id=31'>政企网站</a>";
+                }else{
+                    echo "<a  href='success_list.php?id=31'>政企网站</a>";
+
+                }
+                if($id==32){
+                    echo "<a class=' successNavSel' href='success_list.php?id=32'>高校网站</a>";
+                }else{
+                    echo "<a  href='success_list.php?id=32'>高校网站</a>";
+
+                }
+                if($id==36){
+                    echo "<a class='successNavSel' href='success_list.php?id=36'>电子商城</a>";
+                }else{
+                    echo "<a  href='success_list.php?id=36'>电子商城</a>";
+
+                }
+
+                ?>
+            </div>
+
+            <div class="successBox">
+                <div class="successBoxShow">
+                    <div class="successBoxMargin">
+                        <?php $i = 0; if( !empty( $data ) ) {
+                            foreach( $data as $value ) {
+                                $i++;
+                                ?>
+                                <a href="successDetails.php?id=<?php echo $value['id']; ?>&cat_id=<?php echo $id; ?>" class="successList">
+                                    <img src="<?php echo $value['thumb']; ?>" alt="<?php echo $value['title']; ?>"/>
+                                    <div class="word">
+                                        <p class="pd24" style="margin-top: 10px;"><?php echo $value['title']; ?></p>
+                                    </div>
+                                </a>
+                            <?php } } ?>
+                        <div class="last"></div>
+                        <a href="javascript:LookMore()">
+                            <div class="appMore successListMore" id="more_btn">
+                                查看更多案例
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="foot">
+                <p style="padding-top:30px; margin-top:0px;">Copyright © 2014-2015 中梦科技   All Right Reserved</p>
+                <p>皖ICP备14003592号</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/list.js"></script>
+<script>
+    function LookMore(){
+        var case_num = $(".successList").length;
+        console.log(case_num);
+        var id = "<?php $id = isset($_GET['id']) ? $_GET['id'] : 0; echo $id; ?>"
+        $.post("ajaxmore.php", {id:id,case_num:case_num} , function(result){
+            $(".last").before(result);
+        })
+    }
+
+//    a标签添加点击样式
+//    $(".successNav a").on('click',function(){
+//        $(this).addClass("successNavSel").siblings().removeClass("successNavSel");
+//    })
+
+</script>
